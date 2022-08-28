@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".favRegister">
+
+    <LinearLayout
+        android:id="@+id/barraInf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lupa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:onClick="find"
+            app:srcCompat="@drawable/lupa_removebg_preview" />
+
+        <ImageView
+            android:id="@+id/fav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:onClick="favorite"
+            app:srcCompat="@drawable/fav" />
+
+        <ImageView
+            android:id="@+id/diccionario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:onClick="listRe"
+            app:srcCompat="@drawable/diccionario" />
+
+        <ImageView
+            android:id="@+id/perfil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight=".4"
+            android:onClick="userPer"
+            app:srcCompat="@drawable/perfil" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

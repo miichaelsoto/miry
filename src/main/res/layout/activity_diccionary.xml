@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Diccionary">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+              <ImageView
+                android:id="@+id/logo"
+                android:contentDescription="Logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                app:srcCompat="@drawable/logo_beta" />
+                <Button
+                    android:id="@+id/abogado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="callAbogado"
+                    android:text="@string/abogado" />
+            <Button
+                android:id="@+id/abril"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@color/white"
+                android:onClick="callAbril"
+                android:text="@string/abril" />
+            <Button
+                android:id="@+id/abuela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="25dp"
+                android:onClick="callAbuela"
+                android:text="@string/abuela" />
+                <Button
+                    android:id="@+id/abuelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="callAbuelo"
+                    android:text="Abuelo" />
+                <Button
+                    android:id="@+id/aca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="callAca"
+                    android:text="@string/aca" />
+                <Button
+                    android:id="@+id/ademas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@color/white"
+                    android:onClick="callAdemas"
+                    android:text= "Además" />
+                <Button
+                    android:id="@+id/adios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="callAdios"
+                    android:text= "Adios" />
+
+
+                <Button
+                    android:id="@+id/aguaPura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="callAguaPura"
+                    android:text="Agua Pura" />
+                <Button
+                    android:id="@+id/aprender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@color/white"
+                    android:onClick="callAprender"
+                    android:text="Aprener" />
+                <Button
+                    android:id="@+id/aqui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="callAqui"
+                    android:text="Aquí" />
+                <Button
+                    android:id="@+id/baño"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="callBaño"
+                    android:text="Baño" />
+                <Button
+                    android:id="@+id/bien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="callBien"
+                    android:text="Bien" />
+                <Button
+                    android:id="@+id/buenasN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@color/white"
+                    android:onClick="callBuenasN"
+                    android:text= "Buenas Noches" />
+                <Button
+                    android:id="@+id/buenasT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="callBuenasT"
+                    android:text= "Buenas Tardes" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    <ImageView
+        android:id="@+id/lupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:onClick="find"
+        app:srcCompat="@drawable/lupa_removebg_preview" />
+
+
+
+
+</RelativeLayout>
+

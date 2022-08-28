@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Miry</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="forgotPass">Olvide mi Contraseña</string>
+    <string name="startSession">Iniciar sesion</string>
+    <string name="regsiter">Registrar</string>
+    <string name="find">Buscar</string>
+    <string name="google">Iniciar con Google</string>}
+    <string name="rebootPass">Reiniciar contraseña</string>
+    <string name="abogado">Abogado</string>
+    <string name="abril">Abril</string>
+    <string name="abuela">Abuela</string>
+    <string name="aca">Acá</string>
+    <string name="aqui">Aquí</string>
+    <string name="alla">Allá</string>
+
+
+</resources>
