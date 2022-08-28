@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".userPerfile">
+    <LinearLayout
+        android:id="@+id/userPhoto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/profile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="65dp"
+            android:ems="10"
+            android:textSize="28dp"
+            android:inputType="textPersonName"
+            android:text="User Name" />
+
+        <TextView
+            android:id="@+id/typeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="65dp"
+            android:ems="10"
+            android:textSize="18dp"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="25dp"
+            android:text="type of user" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/medals"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/police_badge" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/police_badge__2_" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            app:srcCompat="@drawable/police_badge__3_" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/config"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/donar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:inputType="textPersonName"
+            android:text="Donar" />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:inputType="textPersonName"
+            android:text="Contactar" />
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:inputType="textPersonName"
+            android:text="Informacion" />
+        <TextView
+            android:onClick="closeSession"
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="25dp"
+            android:inputType="textPersonName"
+            android:text="Cerrar Session" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/barraInf"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:onClick="find"
+            android:id="@+id/lupa"
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/lupa_removebg_preview" />
+        <ImageView
+            android:onClick="favorite"
+            android:id="@+id/fav"
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/fav" />
+
+        <ImageView
+            android:onClick="listRe"
+            android:id="@+id/diccionario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            app:srcCompat="@drawable/diccionario" />
+
+        <ImageView
+            android:onClick="userPer"
+            android:id="@+id/perfil"
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/perfil" />
+
+    </LinearLayout>
+
+</LinearLayout>
