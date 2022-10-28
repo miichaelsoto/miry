@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prod.miry.acercaApp"
+    android:background="@drawable/bg_all">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mythias"
+        android:text="Miry"
+        android:textColor="@color/black"
+        android:textSize="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/len"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon_bold"
+        android:textSize="20dp"
+        android:text="LEN"
+        android:textColor="@color/blue_700"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintStart_toEndOf="@id/diccio"
+        app:layout_constraintEnd_toStartOf="@id/se"
+        />
+    <TextView
+        android:id="@+id/se"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon_bold"
+        android:textSize="20dp"
+        android:text="SE"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintStart_toEndOf="@id/len"
+        app:layout_constraintEnd_toStartOf="@+id/gua"
+
+        />
+    <TextView
+        android:id="@+id/gua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon_bold"
+        android:textSize="20dp"
+        android:text="GUA"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/blue_700"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintStart_toEndOf="@id/se"
+        app:layout_constraintEnd_toEndOf="@+id/nombre"
+
+        />
+    <TextView
+        android:id="@+id/diccio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon_bold"
+        android:textSize="20dp"
+        android:text="Diccionario"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="62dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/len"
+
+        />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="VERSION 2.0"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/lemon_bold"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diccio" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/lemon_bold"
+        android:text="by MICHAEL SOTO"
+        android:textColor="@color/middle_blue"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="@id/diccio"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

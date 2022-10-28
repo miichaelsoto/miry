@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "58215800791",
+    "project_id": "miry-75ba6",
+    "storage_bucket": "miry-75ba6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58215800791:android:60efdf215f518c92d77592",
+        "android_client_info": {
+          "package_name": "com.prod.miry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58215800791-2kkcjtm7j9ob1vkp31no70r45mf47e2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWqeVl8MPxBL0qJftypYIVbZZXCJmH1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58215800791-2kkcjtm7j9ob1vkp31no70r45mf47e2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

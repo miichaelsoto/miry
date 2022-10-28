@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_serach"
+        android:icon="@drawable/lupa_nav_menu"
+        android:title="Buscar"/>
+    <item
+        android:id="@+id/ic_favorite"
+        android:icon="@drawable/fav_nav_menu"
+        android:title="Favoritos"/>
+    <item
+        android:id="@+id/ic_diccionary"
+        android:icon="@drawable/diccion_nav_menu"
+        android:title="Diccionario"/>
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/profile_nav_menu"
+        android:title="Perfil"/>
+</menu>

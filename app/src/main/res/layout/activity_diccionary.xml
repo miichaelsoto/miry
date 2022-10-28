@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prod.miry.Diccionary"
+    android:background="@drawable/bg_all">
+    <FrameLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_above="@+id/button_nav"/>
+
+     <TextView
+        android:id="@+id/nombre"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="0.3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miry"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mythias"
+        android:textSize="170dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscar"
+        />
+    <TextView
+        android:id="@+id/len"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon_bold"
+        android:textSize="20dp"
+        android:text="LEN"
+        android:textColor="@color/blue_700"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintStart_toEndOf="@id/diccio"
+        app:layout_constraintEnd_toStartOf="@id/se"
+        />
+    <TextView
+        android:id="@+id/se"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon_bold"
+        android:textSize="20dp"
+        android:text="SE"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintStart_toEndOf="@id/len"
+        app:layout_constraintEnd_toStartOf="@+id/gua"
+
+        />
+    <TextView
+        android:id="@+id/gua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon_bold"
+        android:textSize="20dp"
+        android:text="GUA"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/blue_700"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintStart_toEndOf="@id/se"
+        app:layout_constraintEnd_toEndOf="@+id/nombre"
+
+        />
+    <TextView
+        android:id="@+id/diccio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon_bold"
+        android:textSize="20dp"
+        android:text="Diccionario"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="62dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/len"
+
+        />
+
+    <EditText
+        android:id="@+id/txtBuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="25dp"
+        android:textColorHint="@color/black"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        app:cornerRadius="25dp"
+        android:hint="Ingrese palabra"
+        android:fontFamily="@font/lemon_light_italik"
+        android:textSize="17dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <Button
+        android:id="@+id/seachB"
+        android:layout_marginTop="40dp"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:onClick="buscar"
+        android:shadowColor="@color/black"
+        android:textSize="25dp"
+        android:text="Buscar"
+        android:fontFamily="@font/lemon_medium"
+        android:textColor="#fff"
+        android:backgroundTint="@color/dark_blue"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscar"
+        app:layout_constraintVertical_bias="0.18" />
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/button_nav"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:itemBackground="@color/dark_blue"
+            app:itemTextColor="#fff"
+            app:itemIconTint="#fff"
+            app:menu="@menu/nav_menu"
+            />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prod.miry.palabraVideo"
+    android:background="@drawable/bg_all">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="0.3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miry"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mythias"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/title"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/lemon_medium_italik"
+        android:textColor="@color/blue_demon"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/gif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombre" />
+
+    <ImageView
+        android:id="@+id/gif"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/explanation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="60dp"
+        android:layout_height="387dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/gif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gif" />
+
+   <TextView
+        android:id="@+id/txtadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+       android:textColor="@color/dark_blue"
+        app:layout_constraintTop_toBottomOf="@id/gif"
+        app:layout_constraintBottom_toTopOf="@id/explanation"
+        app:layout_constraintEnd_toStartOf="@id/add" />
+
+    <Switch
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/explanation"
+        app:layout_constraintEnd_toEndOf="@id/gif"
+        app:layout_constraintTop_toBottomOf="@+id/gif" />
+    <RelativeLayout
+        android:id="@+id/explanation"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add">
+    <TextView
+        android:id="@+id/explanation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="203dp"
+        android:fontFamily="@font/lemon_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
